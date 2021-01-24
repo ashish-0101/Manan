@@ -1,24 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Gaming Website For Latest Updates And Tournament</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="css/phone.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav id="navbar"> 
+    <nav id="navbar">
         <div id="logo">
             <img src="img/logo.png" alt="GamingError">
         </div>
 
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Category</a></li>
-            <li class="item"><a href="#">Latest Launches</a></li>
-            <li class="item"><a href="#">Tournaments</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Category</a></li>
+            <li class="item"><a href="#scroll">Sponsers</a></li>
+            <li class="item"><a href="#contact">Tournaments</a></li>
         </ul>
     </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To Gaming Hub</h1>
+        <p>Want to kick start your gaming career and win prizes with your gaming skills. </p>
+        <p>Enroll now! </p>
+        <button class="btn">Register Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center color">Categories</h1>
+        <div id="services">
+            <div class="box" id="img1">
+                <!-- <img src="" alt=""> -->
+                <h2 class="h-secondary center">Racing</h2>
+                <p class="center color">Show your racing skills and compete with your rivals showing your strength, techniques,driving skills and fearlessness. </p>
+            </div>
+
+            <div class="box" id="img2">
+                <!-- <img src="" alt=""> -->
+                <h2 class="h-secondary center">Fighting</h2>
+                <p class="center color">Punches, kicks, holds and plenty of action and violence are waiting for you in our collection of fighting and combat games. 
+
+                </p>
+            </div>
+
+            <div class="box" id="img3">
+                <!-- <img src="" alt=""> -->
+                <h2 class="h-secondary center">Shooting</h2>
+                <p class="center color">Show your reflexes and speed to the opponent and prove who is the best. Join if you have a good hand on your reflexes.</p>
+            </div>
+        </div>
+        <h1 class="h-primary center color" id="scroll">Our Sponsers</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Sponser">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.jpg" alt="Our Sponser">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Sponser">
+            </div>
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Sponser">
+            </div>
+        </div>
+    </section>
+
     
+    <section id="contact">
+        <h1 class="h-primary center color">Join The Biggest Tournament</h1>
+       
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name"
+                    placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" id="name"
+                    placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" name="phone" id="name"
+                    placeholder="Enter Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="category">CATEGORY</label>
+                    <textarea name="category" id="" cols="30" rows="10" placeholder="Tell About Your Skills"></textarea>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.GamingHub.com. All rights reserved!
+        </div>
+
+    </footer>
+
+  
+
 </body>
+
 </html>

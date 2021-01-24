@@ -4,16 +4,41 @@
     padding: 0px; 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
 }
 
+
 /* Navigation Bar */
 #navbar{
+   
     display: flex;
     align-items: center;
+    /* flex-direction: column; */
+    font-family: 'Baloo Bhai 2', cursive;
+    position: sticky;
+    top: 0px;
 }
+
+#navbar::before{
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 93%;
+    z-index: -1;
+    border-bottom: 3px solid orange;
+  
+}
+
 
 /* Navigation Bar: Logo and Image */
 #logo{
@@ -21,28 +46,16 @@
 }
 
 #logo img{
-    height: 46px;
+    height: 40px;
     margin: 9px 4px;
 }    
 
+
 /* Navigation Bar: List Styling */
-#navbar{
-    position: relative;
-}
+
 
 #navbar ul{
     display: flex;
-   
-}
-
-#navbar::before{
-    background-color: black;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-bottom: 3px solid orange;
    
 }
 
@@ -64,3 +77,216 @@
    
 
 }
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 407px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background:url('../img/home.jpg') no-repeat center center/cover;
+    height: 85%;
+    z-index: -2;
+
+ 
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+ 
+}
+#services .box{
+    border:3px solid orange;
+    margin: 3px 6px;
+    padding: 34px;
+    border-radius: 23px;
+    height: 263px;
+    z-index: -1;
+}
+
+#services .box p{
+    color: white;
+    font-size: 23px;
+    font-family: 'Bree Serif', serif;
+    z-index: -1;
+}
+
+#services-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background:#eef2f6;
+    height: 125%;             /*changes*/
+    z-index: -1;
+}
+
+
+/* CLIENTS SECTION */
+/* #client-section{
+    height: 344px;
+    margin-top: 90px;
+ 
+}
+
+#client-section ::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background:#0f0f0f;
+    height: 80%;           
+    z-index: -2;
+} */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+    border:7px solid orange;
+    
+   
+}
+
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   
+
+    background: url('../img/tmt.png') no-repeat center center/cover;
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+    
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    margin: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px; 
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: orange;
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+   
+}
+
+
+/* IMAGES AND COLORS (CHANGES) */
+
+#img1{
+   
+    background: url('../img/racing2.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+   
+}
+
+#img2{
+    background: url('../img/story1.jpg')  no-repeat center center/cover;
+    opacity: 0.8;
+}
+
+#img3{
+    background: url('../img/shooting1.jpg')  no-repeat center center/cover;
+    opacity: 0.8;
+    
+}
+
+.color{
+    color: black;
+}
+
+#contact-box form input,#contact-box form textarea{
+    background-color: rgb(195 199 191);
+}
+
